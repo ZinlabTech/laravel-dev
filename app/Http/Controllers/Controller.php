@@ -37,5 +37,12 @@ class Controller extends BaseController
         // Use Eloquent
 
         // Use query builder for same result
+        
+        
+        /**
+         * SQL to Eloquent/Query Builder
+         */
+        
+        // select * from `books` where `id` = (select parentable_id from `posts` where `id` = $id and where `parentable_type` = $post_type->model_name) limit 1
     }
 }
